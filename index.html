@@ -1,0 +1,46 @@
+<html>
+
+<head>
+
+    <title>Code Player</title>
+
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="jquery-ui/jquery-ui.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="codeplayer.css" />
+    <link href="jquery-ui/jquery-ui.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="header">
+        <div id="toggleBarContainer">
+            <div class="toggleButtons active" id="html" >
+                HTML
+            </div>
+            <div class="toggleButtons " id="css" >
+                CSS
+            </div>
+            <div class="toggleButtons " id="javascript" >
+                JavaScript
+            </div>
+            <div class="toggleButtons active" id="output" >
+                Output
+            </div>
+        </div>
+    </div>
+
+    <div id="bodyContainer">
+        <textarea id="htmlPanel" class="panel"><p id="hello">Hello World</p></textarea>
+        <textarea id="cssPanel" class="panel hidden">p {color:green;}</textarea>
+        <textarea id="javascriptPanel" class="panel hidden">document.getElementById("hello").innerHTML= "hello Ömrüm";</textarea>
+        <iframe id="outputPanel" class="panel"></iframe>
+    </div>
+
+    <script src="codeplayer.js"></script>
+
+</body>
+
+
+</html>
